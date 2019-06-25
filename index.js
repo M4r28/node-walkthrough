@@ -1,5 +1,5 @@
 //Load external resources
-const {showHelp} = 'require("./messaging")
+const {showHelp} = 'require("./messaging")'
 
 //handle input
 
