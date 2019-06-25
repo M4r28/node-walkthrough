@@ -3,5 +3,5 @@ const removeWhitespace = input => {
   console.log(result);
 };
 
-removeWhitespace();
+removeWhitespace('     sao   tome');
 
