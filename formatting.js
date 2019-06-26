@@ -1,3 +1,13 @@
+exports.prepareString = input => {
+  let result = removeWhitespace(input);
+  let tmpArray = result.split(" ");
+
+  tmpArray = tmpArray.map(el => capitalizeInitial(el));
+
+  result = tmpArray.join("_");
+  // console.log(result);
+};
+
 const removeWhitespace = input => {
   //trim space off the ends
   // input = 'thing    with   more   words'
@@ -10,16 +20,13 @@ const removeWhitespace = input => {
   return result;
 };
 
-
-
 const capitalizeInitial = input => {
   //for tomorrow :)
 
   let result = input.charAt(0).toUpperCase() + input.slice(1).toLowerCase();
   // console.log(result);
 
-
-//Stefan solution
+  //Stefan solution
   // const wordArray = input.split("");
   // const formattedWordArray = wordArray.map(word => {
   //   const firstCaracter = word.charAt(0).toUpperCase();
@@ -34,20 +41,7 @@ const capitalizeInitial = input => {
 capitalizeInitial("here's a test");
 
 
-const prepareString = input => {
-  let result =removeWhitespace(input);
-  let tmpArray = result.split(' ');
-
-  tmpArray = tmpArray.map(el=>
-    capitalizeInitial(el));
-
-  result = tmpArray.join("_");
-  console.log(result)
-}
-
-
-prepareString('kuala  lumpur');
-prepareString('  puerto rico');
-prepareString(' tokyo' );
-
-
+//testing
+// prepareString("kuala  lumpur");
+// prepareString("  puerto rico");
+// prepareString(" tokyo");
