@@ -1,0 +1,23 @@
+{
+  "name": "node-walkthrough",
+  "version": "0.1.0",
+  "description": "0. In a new file called `index.js` write a CLI application that accepts a user parameter and logs it to the console.",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/M4r28/node-walkthrough.git"
+  },
+  "keywords": [],
+  "author": "Marta <marta.marta.k@gmail.com>",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/M4r28/node-walkthrough/issues"
+  },
+  "homepage": "https://github.com/M4r28/node-walkthrough#readme",
+  "dependencies": {
+    "axios": "^0.19.0"
+  }
+}
